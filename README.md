@@ -16,5 +16,5 @@ https://github.com/moses-palmer/pynput
 
 ===================================================
 
-
+1) python ./setup.py
 

@@ -24,6 +24,7 @@ https://github.com/moses-palmer/pynput
 
 
 ==================================================================
+Problem #1 
 
 Problem found running in git bash on Win64 :
 
@@ -36,5 +37,26 @@ Problem found running in git bash on Win64 :
 		touch .bashrc
 		<edit file with :> alias python='winpty python.exe'
 
+
 ==================================================================
+
+Problem #2
+
+	Error message : 
+
+"...\AppData\Local\Programs\Python\Python37\lib\site-packages\pynput-1.4.2-py3.7.egg\pynput\_util\__init__.py", line 78, in inner
+    if f(*args) is False:
+  File "./keylogger.pyw", line 11, in on_press
+    logging.info(str(key))
+Message: "'s'"
+Arguments: ()
+..."
+
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	
+
+Cause: 	
+	Line : 8 -> wrong code == "... format ='%(asctime)s: %(messages)s:')"
+
+Solution :
+	Line : 8 -> right code == "... format ='%(asctime)s: %(message)s:')"
 

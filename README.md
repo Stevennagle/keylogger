@@ -24,6 +24,10 @@ https://github.com/moses-palmer/pynput
 
 
 ==================================================================
+
+Troubleshooting :
+
+
 Problem #1 
 
 Problem found running in git bash on Win64 :
